@@ -27,7 +27,7 @@ to achieve that, and the caveats you need to be aware of.
 
 ## Docker and iptables chains
 
-In the `filter` table, Docker sets the default policy to `DROP`, and creates the
+In the `filter` table, Docker sets the default policy to `DROP` for the `FORWARD` chain, and creates the
 following custom `iptables` chains:
 
 * `DOCKER-USER`
